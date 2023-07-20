@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#363F44"
+        android:gravity="center">
+
+
+        <android.widget.SearchView
+            android:background="@drawable/bg_edt"
+            android:id="@+id/etxtSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="70dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="#A69E9E"
+            android:ems="10"
+            android:inputType="text"
+            android:text=" Nhập tên truyện cần tìm"
+            />
+
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/DStruyen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="3" />
+</LinearLayout>
